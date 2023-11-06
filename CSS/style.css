@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+html {
+    font-size: 16px;
+
+
+}
+
+body {
+    background-color:#F20587;
+    max-width: 87.5rem;
+    font-family:'Archivo Black', sans-serif;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin: 1rem auto;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+h1 {
+    color: #FFF;
+    font-family:'Archivo Black', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2{
+    color: #000;
+    font-family:'Archivo Black', sans-serif;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p{
+    color: #FFF;
+    font-family:'Archivo Black', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Archivo Black;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a{
+   color: #FFF;   
+   text-decoration: none;
+   margin: 0 0 0 2rem;
+}
+
+a h3:hover{
+    color: #000;
+}
+
+a h3:visited{
+    color: #000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    margin: 9rem auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+
+}
+
+main {
+
+
+}
+
+footer {
+    width: 50rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selected{
+    color: #000; 
+}
+
+video {
+    opacity: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video_container {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+#byline{
+    grid-column: 2/12;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
