@@ -12,7 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="unique_back_2">
+        <main>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -34,16 +35,26 @@
                 </a>
             </nav>
         </header>
-        <main>
-           <section>
-            <img src="img/contact_header.png" alt="A digital finger touching a human finger infront of a collage of photos">
-           </section>
-            <section>
-            <p>
-                CONTACT -- Bells and Whistles
-            </p>
-           </section>
-     </main>
+        <div id="contact_title">
+        <h1> REACH OUT TO ME!</h1>
+    </div>
+        <form
+        action="https://formspree.io/f/mpzgnykq"
+        method="POST"
+      >
+        <label>
+          YOUR EMAIL:
+          <input type="email" name="email">
+        </label>
+        <label>
+          YOUR MSG:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">SEND OFF</button>
+      </form>
+    </main>
+    <br>
      <footer>
         <h3>COPYRIGHT 2023</h3>
         <a href="https://www.linkedin.com/in/joshuabothe/" target="_blank">

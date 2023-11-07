@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="unique_background_3">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -31,22 +31,60 @@
                 <a href="photo.html">
                     <h3 class="selected">
                        PHOTO</h3>
+                </a>
             </nav>
         </header>
-        <main>
-           <section>
-           <img src="img/rae_1_portrait.png" alt="Potrait of a woman">
-           </section>
-           <section>
-            <h1> PORTFOLIO</h1>
-           </section>
-           <section>
-            <img src="img/heather_portrait.png" alt="Portrait of a woman looking left">
-            <img src="img/zennen_portrait.png" alt="Portrait of a man in black and white">
-            <img src="img/georgia_protriat.png" alt="Portrait of a woman looking left">
-            <img src="img/sarah_portrait.png" alt="Portrait of a woman">
-            <img src="img/rae_2_portriat.png" alt="Portrait of a woman in black and white">
-           </section>
+    <main>
+<!-- Slideshow container -->
+<h1 id="photos_title">PORTRAITS</h1>
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/zennen_portrait_slide.jpg" alt="balck and white portarit" style="width:100%">
+      <div class="text">Zennen On Film</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/georgia_portrait_slide.jpg" alt="portarit of a woman"   style="width:100%">
+      <div class="text">Georgia</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/sarah_portrait_slide.jpg" alt="portarit of a woman" style="width:100%">
+      <div class="text">Sarah Headshot</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/rae_portrait_slide.jpg" alt="portarit of a woman"   style="width:100%">
+      <div class="text">Rae For Tiffiany's Campaign</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/heather_portrait_slide.jpg" alt="portarit of a woman"   style="width:100%">
+      <div class="text">Heather Headshot</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+  <script src="script.js"></script>
      </main>
      <footer>
         <h3>COPYRIGHT 2023</h3>
@@ -60,6 +98,5 @@
              <h3>YOUTUBE</h3>
         </a>
      </footer>
-        
     </body>
  </html>
