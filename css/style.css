@@ -321,7 +321,7 @@ footer a:hover h3 {
 #frank_1 h2 {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0;   
     z-index: 2;
     margin: 0;
     color: white;
@@ -341,7 +341,7 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    filter: brightness(70%);
+    filter: brightness(40%);
 }
 
 .frank-overlay {
