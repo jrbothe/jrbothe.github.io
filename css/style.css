@@ -1,390 +1,395 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
-html {
-    font-size: 16px;
-
-
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
 }
 
-body {
-    background-color:#F20587;
-    max-width: 87.5rem;
-    font-family:'Archivo Black', sans-serif;
-    color: #FFFFFF;
-    line-height: 1.5;
-    margin: 1rem auto;
+#home_page_rgb {
+    color: white;
+}
+
+#home_page_rgb a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#south_side_logo_home a { 
+    color: black;
+}
+
+#wms {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 100%;
+    margin-top: 0;
+    padding: 0;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
 
 h1 {
-    color: #FFF;
-    font-family:'Archivo Black', sans-serif;
-    font-size: 2.5rem;
+    font-family: "owners", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-weight: 400;
-    
+    font-size: 8rem;
+    margin: 0; 
+    text-align: center;
 }
 
-h2{
-    color: #000;
-    font-family:'Archivo Black', sans-serif;
-    font-size: 2.375rem;
+h6 {
+    font-family: "owners", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 8rem;
+    margin: 0; 
+    text-align: left;
 }
 
-p{
-    color: #FFF;
-    font-family:'Archivo Black', sans-serif;
-    font-size: 2rem;
+h2 {
+    font-family: "owners", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 128px;
+    margin: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 h3 {
-    color: #FFF;
-    font-family: Archivo Black;
-    font-size: 1.375rem;
+    font-family: "owners", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
+    font-size: 4rem;
+    margin: 0; 
+    text-align: center;  
+}
+
+h4 {
+    font-family: "owners", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    margin: 0; 
+    text-align: center;  
+}
+
+h5 {
+    font-family: "owners", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    margin: 0; 
+    text-align: center;  
+    margin-bottom: 2rem; 
+}
+
+#mary_frank {
+    text-decoration: underline;
+    color: black;
+}
+
+#mary_frank a:hover {
+    color: red;
+    text-decoration: underline;
 }
 
 a {
-    display: inline-block;
-    padding: 1px 7px;
-    color: #FFF;
-    border-radius: 3px;
-    text-decoration: none;
-   margin: 0 0 0 2rem;
-}
-
-
-a[href="index.html"] {
-    background-color:#FF4901 ;
-
-}
-
-a[href="about.html"] {
-    background-color: #03B803; 
-
-}
-
-a[href="contact.html"] {
-    background-color: #0046B7;;
-
-}
-
-a[href="photo.html"] {
-    background-color: #F4C300; 
-
-}
-
-
-
-img{
-    max-width: 100%;
-    
-}
-
-a h3:hover{
-    color: #000;
-}
-
-a h3:visited{
-    color: #000;
-}
-
-nav {
-    width: 65rem;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section{
-    margin: 9rem auto;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-column-gap: 1.5rem;
-    grid-auto-flow: dense;
-
+    color: white;
 }
 
 footer {
-    width: 50rem;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-shadow: 1px 2px 3px #000;
+    position: relative;
 }
 
-.selected{
-    color: #000; 
-}
-
-video {
-    opacity: 60%;
+footer a h3 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    z-index: 10;
+    margin: 0;
+    color: white;
+    width: 100%;  
+    margin-top: 2.5rem;
 }
 
-.video_container {
-    position: relative;
-    width: 100%;
-    height: 45rem;
-    overflow: hidden;
-}
-
-.content {
+footer img {
     position: relative;
     z-index: 1;
 }
 
-#byline{
-    margin-top: 10rem;
-    text-align: center;
-    text-shadow: 3px 3px 33px #000
-}
-#project_1{
-    grid-column: 1/6;
-    text-align: center;
-    margin-top: 3rem;
+footer a:hover h3 {
+    color: red;
 }
 
-#description_1{
-    grid-column: 7/12;
-
-}
-
-#project_2{
-    grid-column: 1/12;
-    text-align: center;
-    padding: 1rem;
-
-}
-
-#description_2{
-    grid-column: 1/12;
-    text-align: center;
-}
-
-#project_3{
-grid-column: 6/12;
-
-}
-
-#description_3{
-    grid-column: 1/6;
-}
-
-#project_4{
-grid-column: 1/6;
-}
-
-#description_4{
-grid-column: 6/12;
-}
-
-#project_5{
-grid-column: 6/12;
-}
-
-#description_5{
-grid-column: 1/6;
-}
-
-.unique_background {
-    background-image: url(about_background_large.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-}
-
-.index_background {
-    padding: 20px;
-}
-
-.unique_background header {
-    background-color: #91FF91;
-    padding: 20px;
-}
-
-.unique_back_2 header {
-    background-color: #52DEF3;
-    padding: 20px;  
-}
-
-.unique_background_3 header {
-    background-color: #FFEB9B;
-    padding: 20px;
-}
-
-#about_bio {
-    grid-column: 8/12;
-    background-color: #F20587;
-    padding: 2rem;
-    margin-top: 10rem;
-    text-align: left;
-}
-
-#about_portrait {
-    grid-column: 1/7;
-}
-
-input,
-textarea {
+#petty_1 {
+    position: relative;
     width: 100%;
-    background-color: #F4C300;
-    border: 2px solid #0046B7;
-    font-size: 20px;
-    padding: 8px 16px 8px 16px;
-
-    
 }
 
-label {
+#petty_02 {
+    width: 100%;
     display: block;
-    padding: 16px 8px 16px 8px;
+    z-index: 1;
 }
 
-textarea {
-    height: 320px;
+#petty_1 ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
 
-button {
-    background-color: #03B803;
-    font-size: 40px;
-    padding: 8px 16px 8px 16px;
-    font-family:'Archivo Black';
-    margin-left: 10px;
-    transition: background-color 0.3s; 
-    margin-bottom: 40rem;
-}
-
-button:hover {
-    background-color: #03B80399; 
-}
-
-#contact_title {
+#petty_1 ul li {
+    font-family: "owners", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 8rem;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
     text-align: center;
-    margin-top: 7rem;
-    margin-bottom: 5rem;
-    text-shadow: 3px 3px 30px #000;
+    color: white;
 }
 
-
-.unique_back_2 {
-    background-image: url(contact_background_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
+#arthur_01 {
+    position: relative;
+    width: 100%;
+    height: fit-content;
 }
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+#arthur_01 img {
+    width: 100%;
+    display: block;
+    z-index: 1;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+#arthur_01 h6 {
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    z-index: 2;
+    color: white;
+    margin: 0;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+#arthur_02 {
+    position: relative;
+    width: 100%;
+    height: fit-content;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+#arthur_02 img {
+    width: 100%;
+    display: block;
+    z-index: 1;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+#arthur_02 h6 {
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    z-index: 2;
+    color: black;
+    margin: 0;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+#arthur_houses {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: block;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+#arthur_houses {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: block;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#arthur_houses img {
+    width: 100%;
+    transition: all 2s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+#arthur_houses span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+#arthur_houses:hover img {
+    filter: brightness(80%);
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+#arthur_houses:hover span {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-#photos_title {
- text-align: center;
+#gone {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: block;
+}
+
+#gone img {
+    width: 100%;
+    transition: all 2s ease;
+}
+
+#gone span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#gone:hover img {
+    filter: brightness(80%);
+}
+
+#gone:hover span {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#mary_1 {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+#mary_1 img {
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+#mary_1 h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: white;
+    margin: 0;
+}
+
+#frank_1 {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+#frank_1 img {
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+#frank_1 h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin: 0;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+.frank-overlay {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.frank-overlay img {
+    width: 100%;
+    display: block;
+}
+
+.frank-overlay h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    margin-top: 20rem;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.frank-overlay a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.frank-overlay a:hover h1 {
+    color: red;
+    text-decoration: underline;
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-container h5 {
+    margin: 0;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
